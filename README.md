@@ -35,7 +35,7 @@ To add a manager to this swarm, run 'docker swarm join-token manager' and follow
 
 The output includes commands to add worker nodes to the swarm.
 
-Adding Nodes
+## Adding Nodes
 
 To add a worker node to your swarm, use the command provided in the initialization output:
 ```
@@ -43,28 +43,25 @@ ericausente@ericausente-virtual-machine:~$ sudo docker swarm join --token SWMTKN
 This node joined a swarm as a worker.
 ```
 
-
 Computers in a Swarm cluster are called nodes. Nodes can play two roles in a Swarm:
 
     The role of manager nodes is to manage the cluster; you can execute Swarm management commands on manager nodes.
     The role of worker nodes is to run your containers that do the actual job (like running a web server).
 
     
-Node Management
+## Node Management
 
-List all nodes in the swarm:
-
+### List all nodes in the swarm:
 ```
-
 $ sudo docker node ls
 ID                            HOSTNAME                      STATUS    AVAILABILITY   MANAGER STATUS   ENGINE VERSION
 74ydy5uslm5u2ryb3d5sdqake *   ericausente-virtual-machine   Ready     Active         Leader           24.0.7
 b918cg3ntovvhfjl2wx1g1z9w     ericausente-virtual-machine   Ready     Active                          19.03.4
 ```
 
-Deploying Services
+## Deploying Services
 
-Deploy an NGINX service:
+### Deploy an NGINX service:
 
 ```
 docker service create \
@@ -86,18 +83,17 @@ overall progress: 3 out of 3 tasks
 2/3: running   [==================================================>]
 3/3: running   [==================================================>]
 verify: Service converged
-``
+```
 
-### Managing Services
+## Managing Services
 
-List all services:
+### List all services:
 ```
 docker service ls
 ```
 
 
-Scale a service:
-
+### Scale a service:
 ```
 docker service scale my-nginx=5
 ```
@@ -116,7 +112,7 @@ verify: Service converged
 ```
 
 
-Update a service:
+### Update a service:
 ```
 sudo docker service update --image nginx:latest my-service
 ```
@@ -135,7 +131,7 @@ verify: Service converged
 ```
 
 
-Inspect a service:
+### Inspect a service:
 
 ```
 sudo docker service inspect my-service
@@ -193,9 +189,9 @@ Sample output:
   ...
 ```
 
-### Removing Services
+##  Removing Services
 
-Remove a service from your swarm:
+### Remove a service from your swarm:
 ```
 docker service rm my-service
 ```
