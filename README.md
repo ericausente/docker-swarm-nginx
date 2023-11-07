@@ -39,7 +39,7 @@ The output includes commands to add worker nodes to the swarm.
 
 To add a worker node to your swarm, use the command provided in the initialization output:
 ```
-ericausente@ericausente-virtual-machine:~$ sudo docker swarm join --token SWMTKN-1-1gb3xfpbfy5lwu8yjrap85yn1ct4bfh1u9ci3kqj61bnb3oakj-ai9kn1buz07p8ujhasmbd6flf 10.201.10.149:2377
+ericausente@ericausente-virtual-machine:~$ sudo docker swarm join --token <TOKEN>  10.201.10.149:2377
 This node joined a swarm as a worker.
 ```
 
