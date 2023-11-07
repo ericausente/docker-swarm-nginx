@@ -45,8 +45,8 @@ This node joined a swarm as a worker.
 
 Computers in a Swarm cluster are called nodes. Nodes can play two roles in a Swarm:
 
-    The role of manager nodes is to manage the cluster; you can execute Swarm management commands on manager nodes.
-    The role of worker nodes is to run your containers that do the actual job (like running a web server).
+-  The role of manager nodes is to manage the cluster; you can execute Swarm management commands on manager nodes
+-  The role of worker nodes is to run your containers that do the actual job (like running a web server).
 
     
 ## Node Management
