@@ -1,4 +1,6 @@
-# docker-swarm-nginxThis guide will walk you through the steps of setting up your first Docker Swarm cluster. Docker Swarm is Docker's native container orchestration tool that allows you to manage multiple containers deployed across a cluster of machines.
+# docker-swarm-nginx
+
+This guide will walk you through the steps of setting up your first Docker Swarm cluster. Docker Swarm is Docker's native container orchestration tool that allows you to manage multiple containers deployed across a cluster of machines.
 
 ## Prerequisites
 
